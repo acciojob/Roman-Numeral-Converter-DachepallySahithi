@@ -1,5 +1,5 @@
 function convertToRoman(num) {
-  	const romanNumerals = {
+  	const romanNumerals = [
       0:['M',1000], 
       1:['D', 500], 
       2:['C', 100], 
@@ -7,7 +7,7 @@ function convertToRoman(num) {
       4:['X', 10], 
       5:['V', 5], 
       6:['I', 1]
-    };
+    ];
 	let result=' ';
 	for (let i = 0; i < romanNumerals.length; i++) {
 		const[symbol, value] = romanNumerals[i];
